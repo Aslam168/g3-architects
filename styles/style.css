@@ -195,6 +195,59 @@ section.features {
 }
 
 
+/* some facts section related styles */
+
+.some-facts-heading {
+    width: 50%;
+}
+
+.some-facts-heading h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.some-facts-heading p {
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.some-facts-items {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 20px;
+}
+
+section.some-facts {
+    margin-bottom: 130px;
+}
+
+.some-facts-items item {
+    border: 1px solid black;
+}
+
+.some-facts-items > .item {
+    border: 2px solid #ffa54b94;
+    border-radius: 8px;
+    padding: 35px 20px;
+}
+
+.some-facts-items .item img {
+    width: 35px;
+    margin-bottom: 5px;
+}
+
+.some-facts-items .item h3 {
+    font-size: 2rem;
+    color: #000000b5;
+    margin-bottom: 5px;
+}
+
+.some-facts-items .item span {
+    font-weight: 600;
+    color: #00000099;
+}
+
 
 /* responsive related styles */
 
@@ -202,7 +255,7 @@ section.features {
 /* responsive for small devices */
 
 @media screen and (max-width: 576px) {
-    .navbar, .navbar-links, section.teams, section.features{
+    .navbar, .navbar-links, section.teams, section.features, .some-facts-items{
         flex-direction: column;
     }
 
@@ -269,4 +322,18 @@ section.features {
         bottom: -40px;
         left: -20px;
     }
+
+    /* some facts section related styles */
+
+    .some-facts-heading{
+        width: 100%;
+    }
+
+    .some-facts-items{
+        gap: 20px;
+    }
+
+
+
+
 }
